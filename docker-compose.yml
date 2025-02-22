@@ -1,0 +1,11 @@
+services:
+  al2:
+    image: amazonlinux:2
+    volumes:
+      - ./data:/data
+    tty: true
+  al2023:
+    build:
+      context: .
+      dockerfile: ./docker/al2023/Dockerfile
+    tty: true
