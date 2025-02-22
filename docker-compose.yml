@@ -1,6 +1,8 @@
 services:
   al2:
-    image: amazonlinux:2
+    build:
+      context: .
+      dockerfile: ./docker/al2/Dockerfile
     volumes:
       - ./data:/data
     tty: true
