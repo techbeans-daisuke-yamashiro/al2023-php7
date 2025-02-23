@@ -11,3 +11,5 @@ services:
       context: .
       dockerfile: ./docker/al2023/Dockerfile
     tty: true
+    volumes:
+      - ./data:/data
